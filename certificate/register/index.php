@@ -1,6 +1,6 @@
 <?php
 # Include connection
-require_once "./config.php";
+require_once "../config.php";
 
 # Define variables and initialize with empty values
 $username_err = $email_err = $password_err = "";
@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       # Execute the prepared statement
       if (mysqli_stmt_execute($stmt)) {
         echo "<script>" . "alert('Registeration completed successfully. Login to continue.');" . "</script>";
-        echo "<script>" . "window.location.href='./login.php';" . "</script>";
+        echo "<script>" . "window.location.href='../login';" . "</script>";
         exit;
       } else {
         echo "<script>" . "alert('Oops! Something went wrong. Please try again later.');" . "</script>";
@@ -134,9 +134,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User login system</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
-  <script defer src="./js/script.js"></script>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
+  <script defer src="../js/script.js"></script>
 </head>
 
 <body>
@@ -170,7 +170,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="mb-3">
               <input type="submit" class="btn btn-primary form-control" name="submit" value="Sign Up">
             </div>
-            <p class="mb-0">Already have an account ? <a href="./login.php">Log In</a></p>
+            <p class="mb-0">Already have an account ? <a href="../login">Log In</a></p>
           </form>
           <!-- form ends here -->
         </div>

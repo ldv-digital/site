@@ -4,12 +4,12 @@ session_start();
 
 # Check if user is already logged in, If yes then redirect him to index page
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == TRUE) {
-  echo "<script>" . "window.location.href='./'" . "</script>";
+  echo "<script>" . "window.location.href='../'" . "</script>";
   exit;
 }
 
 # Include connection
-require_once "./config.php";
+require_once "../config.php";
 
 # Define variables and initialize with empty values
 $user_login_err = $user_password_err = $login_err = "";
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $_SESSION["loggedin"] = TRUE;
 
               # Redirect user to index page
-              echo "<script>" . "window.location.href='./'" . "</script>";
+              echo "<script>" . "window.location.href='../'" . "</script>";
               exit;
             } else {
               # If password is incorrect show an error message
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
       } else {
         echo "<script>" . "alert('Oops! Something went wrong. Please try again later.');" . "</script>";
-        echo "<script>" . "window.location.href='./login.php'" . "</script>";
+        echo "<script>" . "window.location.href='../login'" . "</script>";
         exit;
       }
 
@@ -97,9 +97,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User login system</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
-  <script defer src="./js/script.js"></script>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
+  <script defer src="../js/script.js"></script>
 </head>
 
 <body>
@@ -133,8 +133,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="mb-3">
               <input type="submit" class="btn btn-primary form-control" name="submit" value="Log In">
             </div>
-            <p class="mb-0">Don't have an account ? <a href="./register.php">Sign Up</a></p>
-            testeeeeeee
+            <p class="mb-0">Don't have an account ? <a href="../register">Sign Up</a></p>
+            
           </form>
           <!-- form ends here -->
         </div>

@@ -4,7 +4,7 @@ session_start();
 
 # If user is not logged in then redirect him to login page
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== TRUE) {
-  echo "<script>" . "window.location.href='./login.php';" . "</script>";
+  echo "<script>" . "window.location.href='./login';" . "</script>";
   exit;
 }
 ?>
@@ -32,7 +32,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== TRUE) {
       <div class="col-lg-5 text-center">
         <img src="./img/blank-avatar.jpg" class="img-fluid rounded" alt="User avatar" width="180">
         <h4 class="my-4">Hello, <?= htmlspecialchars($_SESSION["username"]); ?></h4>
-        <a href="./logout.php" class="btn btn-primary">Log Out</a>
+        <a href="./logout" class="btn btn-primary">Log Out</a>
       </div>
     </div>
   </div>
