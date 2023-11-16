@@ -1783,3 +1783,7 @@ img.w3-image.mobile {
         display: none;
     }
 }
+
+html, body{
+    scroll-behavior: smooth;
+}
