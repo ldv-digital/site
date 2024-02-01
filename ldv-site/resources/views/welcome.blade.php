@@ -17,9 +17,9 @@
     </div>
 
     <header class="ldv-display-container ldv-content ldv-wide" style="max-width:1500px;" id="home">
-        <img class="ldv-image desktop" src="/img/banner-ldv.jpg" alt="imagem relacionada a tecnologia" width="1500"
+        <img class="ldv-image desktop" src="img/banner-ldv.jpg" alt="imagem relacionada a tecnologia" width="1500"
             height="800">
-        <img class="ldv-image mobile" src="/img/banner-mobile.png" alt="imagem relacionada a tecnologia" width="1500"
+        <img class="ldv-image mobile" src="img/banner-mobile.png" alt="imagem relacionada a tecnologia" width="1500"
             height="800">
         <div class="ldv-display-middle ldv-margin-top ldv-center">
             <h1 class="ldv-xxlarge ldv-text-white"><span class="ldv-padding ldv-black ldv-opacity-min"><b>LDV</b></span>
@@ -41,7 +41,7 @@
 
         <div class="ldv-row-padding ldv-grayscale">
             <div class="ldv-col l3 m6 ldv-margin-bottom">
-                <img src="/img/equipe.png" alt="logo sobre nós" width=96 height="96" style="width:100%">
+                <img src="img/equipe.png" alt="logo sobre nós" width=96 height="96" style="width:100%">
                 <h3>Sobre Nós</h3>
 
                 <p>Somos apaixonados por criar e compartilhar produtos digitais incríveis que tornam a vida mais fácil,
@@ -50,7 +50,7 @@
 
             </div>
             <div class="ldv-col l3 m6 ldv-margin-bottom">
-                <img src="/img/missao.png" alt="Logo nossa missão" width=96 height="96" style="width:100%">
+                <img src="img/missao.png" alt="Logo nossa missão" width=96 height="96" style="width:100%">
                 <h3>Nossa Missão</h3>
 
                 <p>Nossa missão é simplificar a vida digital, fornecendo produtos de alta qualidade que atendam às
@@ -59,7 +59,7 @@
 
             </div>
             <div class="ldv-col l3 m6 ldv-margin-bottom">
-                <img src="/img/ideia.png" alt="Logo o que fazemos" width=96 height="96" style="width:100%">
+                <img src="img/ideia.png" alt="Logo o que fazemos" width=96 height="96" style="width:100%">
                 <h3>O Que Fazemos</h3>
 
                 <p>Desenvolvemos uma variedade de produtos digitais, desde aplicativos móveis e software de
@@ -68,7 +68,7 @@
 
             </div>
             <div class="ldv-col l3 m6 ldv-margin-bottom">
-                <img src="/img/trabalho-em-equipe.png" alt="Logo nossa equipe" width=96 height="96" style="width:100%">
+                <img src="img/trabalho-em-equipe.png" alt="Logo nossa equipe" width=96 height="96" style="width:100%">
                 <h3>Nossa Equipe</h3>
 
                 <p>Nossa equipe é formada por especialistas apaixonados e dedicados em diversas áreas, incluindo design
@@ -128,7 +128,7 @@
             </div>
         </div>
         <div class="ldv-container">
-            <img src="/img/banner-footer.jpg" class="ldv-image" alt="Imagem de uma mesa de escritório" width=1500
+            <img src="img/banner-footer.jpg" class="ldv-image" alt="Imagem de uma mesa de escritório" width=1500
                 height="800" style="width:100%">
         </div>
 
